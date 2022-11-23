@@ -10,9 +10,9 @@
 		ADC2A9C3292D95FE0055053E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2A9C2292D95FE0055053E /* AppDelegate.swift */; };
 		ADC2A9C5292D95FE0055053E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2A9C4292D95FE0055053E /* SceneDelegate.swift */; };
 		ADC2A9C7292D95FE0055053E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2A9C6292D95FE0055053E /* ViewController.swift */; };
-		ADC2A9CA292D95FE0055053E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC2A9C8292D95FE0055053E /* Main.storyboard */; };
 		ADC2A9CC292D95FF0055053E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC2A9CB292D95FF0055053E /* Assets.xcassets */; };
 		ADC2A9CF292D95FF0055053E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC2A9CD292D95FF0055053E /* LaunchScreen.storyboard */; };
+		ADC2A9D7292DDA010055053E /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = ADC2A9D6292DD00A0055053E /* home.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		ADC2A9C2292D95FE0055053E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC2A9C4292D95FE0055053E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ADC2A9C6292D95FE0055053E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADC2A9C9292D95FE0055053E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADC2A9CB292D95FF0055053E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC2A9CE292D95FF0055053E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADC2A9D0292D95FF0055053E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC2A9D6292DD00A0055053E /* home.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +59,10 @@
 				ADC2A9C2292D95FE0055053E /* AppDelegate.swift */,
 				ADC2A9C4292D95FE0055053E /* SceneDelegate.swift */,
 				ADC2A9C6292D95FE0055053E /* ViewController.swift */,
-				ADC2A9C8292D95FE0055053E /* Main.storyboard */,
 				ADC2A9CB292D95FF0055053E /* Assets.xcassets */,
 				ADC2A9CD292D95FF0055053E /* LaunchScreen.storyboard */,
 				ADC2A9D0292D95FF0055053E /* Info.plist */,
+				ADC2A9D6292DD00A0055053E /* home.html */,
 			);
 			path = WebViewDiff;
 			sourceTree = "<group>";
@@ -126,8 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC2A9CF292D95FF0055053E /* LaunchScreen.storyboard in Resources */,
+				ADC2A9D7292DDA010055053E /* home.html in Resources */,
 				ADC2A9CC292D95FF0055053E /* Assets.xcassets in Resources */,
-				ADC2A9CA292D95FE0055053E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADC2A9C8292D95FE0055053E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADC2A9C9292D95FE0055053E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADC2A9CD292D95FF0055053E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HDFLLXK789;
@@ -294,7 +287,7 @@
 				INFOPLIST_FILE = WebViewDiff/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +297,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ycompany.WebViewDiff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,14 +309,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDFLLXK789;
+				DEVELOPMENT_TEAM = GX3EM6S66G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebViewDiff/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,6 +326,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ycompany.WebViewDiff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

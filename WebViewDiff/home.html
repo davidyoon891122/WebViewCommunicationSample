@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <div id="root">Hello</div>
+    <button onclick="sendMessageToNative()">SendMessage</button>
+    <script type="text/babel">
+        const rootElement = document.getElementById('root')
+        const Text = ({title}) => (
+            <>
+                <h1>{title}</h1>
+            </>
+        )
+        
+        
+        const Button = ({title}) => (
+            <>
+              <button>{title}</button>
+             </>
+         )
+        
+        const element = (
+             <>
+                <Text title="Test" />
+                <Button title="Button" />
+             </>
+         )
+         
+         
+        
+        ReactDOM.render(element, rootElement)
+        
+        
+        function sendMessageToNative() {
+            window.webkit.messageHandlers.system.postMessage("message")
+        }
+    </script>
+    </body>
+</html>
