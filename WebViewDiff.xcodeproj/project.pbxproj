@@ -24,6 +24,7 @@
 		ADC2A9CE292D95FF0055053E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADC2A9D0292D95FF0055053E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC2A9D6292DD00A0055053E /* home.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
+		ADC2A9D8292DF6B40055053E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				ADC2A9CD292D95FF0055053E /* LaunchScreen.storyboard */,
 				ADC2A9D0292D95FF0055053E /* Info.plist */,
 				ADC2A9D6292DD00A0055053E /* home.html */,
+				ADC2A9D8292DF6B40055053E /* README.md */,
 			);
 			path = WebViewDiff;
 			sourceTree = "<group>";
