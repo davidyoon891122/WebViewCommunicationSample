@@ -55,7 +55,14 @@ extension ViewController: WKScriptMessageHandler {
         _ userContentController: WKUserContentController,
         didReceive message: WKScriptMessage
     ) {
-        print(message)
+        if message.name == "system" {
+            guard let body = message.body as? [String: String] else { return }
+            print(body)
+            let alert = UIAlertController(title: "Alert", message: "AlertMessage", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
+            
+            present(alert, animated: true, completion: nil)
+        }
     }
 }
 

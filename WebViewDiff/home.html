@@ -37,7 +37,14 @@
         
         
         function sendMessageToNative() {
-            window.webkit.messageHandlers.system.postMessage("message")
+            const message = {
+                "name": "react",
+                "version": "1.01.17",
+                "platform": "web"
+            }
+            
+            
+            window.webkit.messageHandlers.system.postMessage(message)
         }
     </script>
     </body>
